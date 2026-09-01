@@ -6,6 +6,4 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-1. Write 2-3 paragraphs about yourself
-2. Upload Professional headshot
+ Write 2-3 pagraphs about yourself.
