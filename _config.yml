@@ -22,7 +22,7 @@ repository               : "sabahummie/sabahummie.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "sabah_resize.jpg"
   name             : "Sabah Ummie"
   pronouns         : # example: "she/her"  
   bio              : "AI/ML Research Enthusiast. Interested in Deep Learning application in healthcare and education."
