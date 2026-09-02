@@ -24,10 +24,10 @@ author:
   # Biographic information
   avatar           : "sabah_profile.png"
   name             : "Sabah Ummie"
-  pronouns         : # example: "she/her"  
+  pronouns         : "she/her"
   bio              : "AI/ML Research Enthusiast. Interested in Deep Learning application in healthcare and education."
   location         : "Norfolk, VA"
-  employer         : "University of Rhode Island"
+  employer         : "Elite Research Lab"
   uri              : # URL
   email            : "sabah.ummie@gmail.com" 
 
