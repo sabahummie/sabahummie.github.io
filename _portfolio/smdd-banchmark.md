@@ -20,7 +20,7 @@ This project evaluated the collaboration of multi-turn, multi agent collaboratio
 
 Python, OpenAirInterface, Open RAN, machine learning, digital beamforming, and software-defined radio.
 
-## Project Links
+<!-- ## Project Links -->
 
 <!-- - [GitHub repository](https://github.com/sabahummie/REPOSITORY-NAME) -->
-- [Related publication](/publications/)
+<!-- - [Related publication](/publications/) -->
