@@ -23,4 +23,4 @@ Python, OpenAirInterface, Open RAN, machine learning, digital beamforming, and s
 ## Project Links
 
 <!-- - [GitHub repository](https://github.com/sabahummie/REPOSITORY-NAME) -->
-- [Related publication](/publications/)![alt text](smdd-benchmark_2.png)
+- [Related publication](/publications/)
