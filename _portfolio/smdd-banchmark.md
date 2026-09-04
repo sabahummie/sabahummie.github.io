@@ -1,6 +1,6 @@
 ---
 title: "Banchmarking Multi-turn, multi-agent system on Small Molecule Drug Discovery"
-excerpt: "Evaluation of multi-agent collaboration in small molecule Drug Discovery Tasks<br/><img src='/images/portfolio/smdd-benchmark.png' alt='Benchmarking SMDD project'>"
+excerpt: "Evaluation of multi-agent collaboration in small molecule Drug Discovery Tasks<br/><img src='/images/portfolio/smdd-benchmark_2.png' alt='Benchmarking SMDD project'>"
 collection: portfolio
 permalink: /portfolio/smdd-benchmark/
 ---
@@ -23,4 +23,4 @@ Python, OpenAirInterface, Open RAN, machine learning, digital beamforming, and s
 ## Project Links
 
 <!-- - [GitHub repository](https://github.com/sabahummie/REPOSITORY-NAME) -->
-- [Related publication](/publications/)
+- [Related publication](/publications/)![alt text](smdd-benchmark_2.png)
