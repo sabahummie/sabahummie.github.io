@@ -1,6 +1,6 @@
 ---
 title: "Federated Model Predicting Postpartum Depression Risk"
-excerpt: "Develop a postpartum depression predictive model on distributed clinical institutions and evaluate prediction performance. <br/><img src='/images/portfolio/ppd-thumbnail.png' alt='Benchmarking SMDD project'>"
+excerpt: "Develop a postpartum depression predictive model on distributed clinical institutions and evaluate prediction performance. <br/><img src='/images/portfolio/ppd-thumbnail.png' alt='Federated PPD Prediction'>"
 collection: portfolio
 permalink: /portfolio/fl-ppd-prediction/
 ---
