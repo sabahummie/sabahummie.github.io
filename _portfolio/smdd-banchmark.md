@@ -21,7 +21,7 @@ autonomous drug discovery.
 
 ## Technologies
 
-Python, OpenAirInterface, Open RAN, machine learning, digital beamforming, and software-defined radio.
+Python, RDKit, Boltz2, ADMET 
 
 <!-- ## Project Links -->
 
