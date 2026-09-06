@@ -11,10 +11,13 @@ This project evaluated the collaboration of multi-turn, multi agent collaboratio
 
 ## Objectives
 
-- Improve communication performance for 5G users.
-- Reduce interference toward radar systems.
-- Integrate the beamforming algorithm with an Open RAN xApp.
-- Evaluate the system using an OAI-based 5G testbed.
+- Analyze the limitations of traditional LLM evaluation frameworks in interpreting underlying chemical rules in
+small-molecule drug discovery benchmark.
+- Investigate multi-turn agent evaluation for tool selection accuracy, ReAct reasoning, and context retention over
+iterative interactions over single-turn LLM benchmarks
+- Analyze multi-agent workflow architectures focusing on task extraction and tool orchestration.
+- Analyze evaluation criteria for the workflow for integrating chemical APIs like Boltz2 and ADMET-AI for
+autonomous drug discovery.
 
 ## Technologies
 
