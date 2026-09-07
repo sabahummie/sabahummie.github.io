@@ -2,7 +2,7 @@
 title: "Biologically Informed Feature Selection inAlzheimer's Disease"
 collection: publications
 category: Conference Papers
-permalink: /publication/biologically-informed.md
+permalink: /publication/2026-05-06-biologically-informed
 # excerpt: "A brief description of this research."
 date: 2026-05-06
 venue: "2025 International Conference on Decision Aid Sciences and Applications (DASA)"
