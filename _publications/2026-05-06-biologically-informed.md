@@ -1,7 +1,7 @@
 ---
 title: "Biologically Informed Feature Selection inAlzheimer's Disease"
 collection: publications
-category: Conference Papers
+category: conferences
 permalink: /publication/2026-05-06-biologically-informed
 # excerpt: "A brief description of this research."
 date: 2026-05-06
