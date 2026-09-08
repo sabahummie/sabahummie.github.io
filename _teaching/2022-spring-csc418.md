@@ -1,11 +1,18 @@
 ---
 title: "Teaching Assistant — CSC 418"
 collection: teaching
-type: "Teaching Assistant"
-permalink: /teaching/2022-spring-csc418
-venue: "University of Rhode Island, Department of ECBE"
-# date: 2025-08-25
-location: "Kingston, Rhode Island"
+permalink: /teaching/2022-spring-csc-418
+date: 2022-01-01
+institution: "University of Rhode Island"
+department: "Department of Electrical, Computer, and Biomedical Engineering"
+course: "CSC 418: Information and Network Security"
+semester: "Spring 2022"
+instructor: "Dr. Yan (Lindsay) Sun"
+role: "Teaching Assistant"
+responsibilities:
+  - "Assisted the instructor in preparing course materials and supported students with assignments and projects."
+  - "Explained solutions to examinations and assignments to strengthen students’ understanding of key course concepts."
+  - "Conducted individual support sessions and assisted with grading assignments, examinations, and projects."
 ---
 
 ### Course information
