@@ -3,7 +3,7 @@ layout: publication
 title: "Development of an Online Intervention to Reduce Internalized Stigma in Epilepsy"
 collection: publications
 category: manuscripts
-permalink: /publication/development-online-intervention-epilepsy
+permalink: /publication/2022-08-17-riseabove
 excerpt: "This study developed and evaluated an online intervention designed to reduce internalized stigma among people living with epilepsy."
 date: 2022-08-17
 venue: "Archives of Clinical Neuropsychology"
