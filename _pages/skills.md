@@ -8,7 +8,6 @@ author_profile: true
 A summary of my programming, software development, and data-analysis skills.
 
 ### Programming Languages
-
 `Python` · `Java` · `SQL`
 
 ### Computer Science Fundamentals
