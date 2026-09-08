@@ -5,32 +5,252 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.publications-intro {
+  margin-bottom: 2rem;
+}
+
+.publication-section {
+  margin: 2.2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.publication-card {
+  margin: 1.25rem 0 2rem;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid rgba(127, 127, 127, 0.25);
+  border-left: 4px solid #52adc8;
+  border-radius: 8px;
+  background: rgba(127, 127, 127, 0.04);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.publication-title {
+  margin: 0 !important;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.publication-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  color: #52adc8;
+}
+
+.publication-venue {
+  margin: 0.4rem 0 0 !important;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.publication-year {
+  flex-shrink: 0;
+  padding: 0.25rem 0.7rem;
+  border-radius: 1rem;
+  background: rgba(82, 173, 200, 0.15);
+  color: #3790aa;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.publication-details {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.7fr) minmax(250px, 2fr);
+  gap: 1rem 1.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.publication-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.publication-value {
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-link {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgba(82, 173, 200, 0.3);
+  border-radius: 5px;
+  background: rgba(82, 173, 200, 0.08);
+  color: #3790aa !important;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.publication-link:hover {
+  background: rgba(82, 173, 200, 0.18);
+}
+
+.publication-summary {
+  margin-top: 1.2rem;
+  line-height: 1.65;
+}
+
+.publication-summary p {
+  margin-bottom: 0 !important;
+}
+
+.publication-citation {
+  margin-top: 1.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.publication-citation p {
+  margin: 0 !important;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .publication-details {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-header {
+    align-items: flex-start;
+  }
+}
+</style>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<p class="publications-intro">
+  You can also find my articles on
+  <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">
+    my Google Scholar profile
+  </a>.
+</p>
 {% endif %}
 
-{% include base_path %}
+{% for category in site.publication_category %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+  {% assign category_posts = site.publications
+    | where: "category", category[0]
+    | sort: "date"
+    | reverse %}
+
+  {% if category_posts.size > 0 %}
+
+    <h2 class="publication-section">{{ category[1].title }}</h2>
+
+    {% for post in category_posts %}
+
+      <article class="publication-card">
+
+        <header class="publication-header">
+          <div>
+            <h3 class="publication-title">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+              </a>
+            </h3>
+
+            {% if post.venue %}
+              <p class="publication-venue">{{ post.venue }}</p>
+            {% endif %}
+          </div>
+
+          <span class="publication-year">
+            {{ post.date | date: "%Y" }}
+          </span>
+        </header>
+
+        <div class="publication-details">
+
+          <div>
+            <span class="publication-label">Publication type</span>
+            <p class="publication-value">
+              <strong>{{ category[1].title }}</strong>
+            </p>
+          </div>
+
+          <div>
+            <span class="publication-label">Resources</span>
+
+            <div class="publication-links">
+
+              {% if post.paperurl %}
+                <a class="publication-link"
+                   href="{{ post.paperurl }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  View Paper
+                </a>
+              {% endif %}
+
+              {% if post.slidesurl %}
+                <a class="publication-link"
+                   href="{{ post.slidesurl }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  View Slides
+                </a>
+              {% endif %}
+
+              {% if post.bibtexurl %}
+                <a class="publication-link"
+                   href="{{ post.bibtexurl }}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  BibTeX
+                </a>
+              {% endif %}
+
+              <a class="publication-link"
+                 href="{{ post.url | relative_url }}">
+                Publication Details
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        {% if post.excerpt %}
+          <div class="publication-summary">
+            {{ post.excerpt | markdownify }}
+          </div>
+        {% endif %}
+
+        {% if post.citation %}
+          <div class="publication-citation">
+            <span class="publication-label">Recommended citation</span>
+            <p>{{ post.citation }}</p>
+          </div>
+        {% endif %}
+
+      </article>
+
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
+  {% endif %}
 
-
+{% endfor %}
