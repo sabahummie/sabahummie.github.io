@@ -1,0 +1,235 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="https://schema.org/ScholarlyArticle">
+
+    <meta itemprop="headline" content="{{ page.title | strip_html | escape_once }}">
+
+    <div class="page__inner-wrap">
+
+      <header>
+        <h1 class="page__title">Publication Details</h1>
+      </header>
+
+      <section class="page__content" itemprop="text">
+
+        <style>
+        .publication-detail-card {
+          margin: 1.5rem 0 2rem;
+          padding: 1.5rem 1.6rem;
+          border: 1px solid rgba(127, 127, 127, 0.25);
+          border-left: 4px solid #52adc8;
+          border-radius: 8px;
+          background: rgba(127, 127, 127, 0.04);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        .publication-detail-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .publication-detail-title {
+          margin: 0 !important;
+          font-size: 1.2rem;
+          line-height: 1.4;
+        }
+
+        .publication-detail-venue {
+          margin: 0.4rem 0 0 !important;
+          font-style: italic;
+          opacity: 0.8;
+        }
+
+        .publication-detail-year {
+          flex-shrink: 0;
+          padding: 0.25rem 0.7rem;
+          border-radius: 1rem;
+          background: rgba(82, 173, 200, 0.15);
+          color: #3790aa;
+          font-size: 0.85rem;
+          font-weight: 700;
+        }
+
+        .publication-detail-information {
+          display: grid;
+          grid-template-columns: minmax(150px, 0.7fr) minmax(250px, 2fr);
+          gap: 1rem 1.5rem;
+          margin-top: 1.25rem;
+          padding-top: 1.1rem;
+          border-top: 1px solid rgba(127, 127, 127, 0.2);
+        }
+
+        .publication-detail-label {
+          display: block;
+          margin-bottom: 0.35rem;
+          font-size: 0.72rem;
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          opacity: 0.65;
+        }
+
+        .publication-detail-value {
+          margin: 0 !important;
+          line-height: 1.5;
+        }
+
+        .publication-detail-links {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .publication-detail-link {
+          display: inline-block;
+          padding: 0.3rem 0.7rem;
+          border: 1px solid rgba(82, 173, 200, 0.3);
+          border-radius: 5px;
+          background: rgba(82, 173, 200, 0.08);
+          color: #3790aa !important;
+          font-size: 0.84rem;
+          font-weight: 600;
+          text-decoration: none !important;
+        }
+
+        .publication-detail-link:hover {
+          background: rgba(82, 173, 200, 0.18);
+        }
+
+        .publication-detail-description {
+          margin-top: 1.25rem;
+          line-height: 1.65;
+        }
+
+        .publication-detail-description p:last-child {
+          margin-bottom: 0;
+        }
+
+        .publication-detail-citation {
+          margin-top: 1.25rem;
+          padding-top: 1.1rem;
+          border-top: 1px solid rgba(127, 127, 127, 0.2);
+        }
+
+        .publication-detail-citation p {
+          margin: 0 !important;
+          line-height: 1.6;
+        }
+
+        @media (max-width: 650px) {
+          .publication-detail-information {
+            grid-template-columns: 1fr;
+          }
+        }
+        </style>
+
+        <article class="publication-detail-card">
+
+          <header class="publication-detail-header">
+            <div>
+              <h2 class="publication-detail-title">
+                {{ page.title }}
+              </h2>
+
+              {% if page.venue %}
+                <p class="publication-detail-venue">
+                  {{ page.venue }}
+                </p>
+              {% endif %}
+            </div>
+
+            <span class="publication-detail-year">
+              {{ page.date | date: "%Y" }}
+            </span>
+          </header>
+
+          <div class="publication-detail-information">
+
+            <div>
+              <span class="publication-detail-label">Publication date</span>
+
+              <p class="publication-detail-value">
+                <strong>{{ page.date | date: "%B %d, %Y" }}</strong>
+              </p>
+            </div>
+
+            <div>
+              <span class="publication-detail-label">Resources</span>
+
+              <div class="publication-detail-links">
+
+                {% if page.paperurl %}
+                  <a class="publication-detail-link"
+                     href="{{ page.paperurl }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    View Paper
+                  </a>
+                {% endif %}
+
+                {% if page.slidesurl %}
+                  <a class="publication-detail-link"
+                     href="{{ page.slidesurl }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    View Slides
+                  </a>
+                {% endif %}
+
+                {% if page.bibtexurl %}
+                  <a class="publication-detail-link"
+                     href="{{ page.bibtexurl }}"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    BibTeX
+                  </a>
+                {% endif %}
+
+                <a class="publication-detail-link"
+                   href="{{ '/publications/' | relative_url }}">
+                  Back to Publications
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+          {% if content %}
+            <div class="publication-detail-description">
+              {{ content }}
+            </div>
+          {% endif %}
+
+          {% if page.citation %}
+            <div class="publication-detail-citation">
+
+              <span class="publication-detail-label">
+                Recommended citation
+              </span>
+
+              <p>{{ page.citation }}</p>
+
+            </div>
+          {% endif %}
+
+        </article>
+
+      </section>
+
+    </div>
+
+  </article>
+
+</div>

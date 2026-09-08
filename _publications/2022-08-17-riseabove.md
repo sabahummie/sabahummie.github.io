@@ -1,12 +1,15 @@
 ---
+layout: publication
 title: "Development of an Online Intervention to Reduce Internalized Stigma in Epilepsy"
 collection: publications
 category: manuscripts
-permalink: /publication/2022-08-17-riseabove
+permalink: /publication/development-online-intervention-epilepsy
 excerpt: "This study developed and evaluated an online intervention designed to reduce internalized stigma among people living with epilepsy."
 date: 2022-08-17
 venue: "Archives of Clinical Neuropsychology"
-paperurl: "https://academic.oup.com/acn/article-abstract/37/6/1310/6669191?redirectedFrom=fulltext"
-citation: 'Allyson S Goldstein, Elaine T Kiriakopoulos, Geoffrey Tremont, Kunal Mankodiya, Sabah Ummie, Seth Margolis (2025). " Development of an Online Intervention to Reduce Internalized Stigma in Epilepsy" <i>2022 Archives of Clinical Neuropsychology</i>.'
+paperurl: "https://doi.org/10.1093/arclin/acac060.156"
+citation: 'Goldstein, A. S., Kiriakopoulos, E. T., Tremont, G., Mankodiya, K., Ummie, S., and Margolis, S. (2022). “A-156 Development of an Online Intervention to Reduce Internalized Stigma in Epilepsy.” <i>Archives of Clinical Neuropsychology</i>, 37(6), 1310.'
+share: false
 ---
-<!-- [Download the paper](/files/publications/my-research-paper.pdf) -->
+
+This study developed and evaluated a patient-centered online intervention designed to reduce internalized stigma and improve quality of life among people living with epilepsy.

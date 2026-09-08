@@ -1,4 +1,5 @@
 ---
+layout: publication
 title: "Biologically Informed Feature Selection inAlzheimer's Disease"
 collection: publications
 category: conferences
