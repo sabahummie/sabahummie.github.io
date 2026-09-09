@@ -24,7 +24,7 @@ redirect_from:
         University of Rhode Island
       </p>
       <span class="education-label">Location</span>
-      <p class="education-value">Kingston, Rhode Island</p>
+      <p class="education-value">Kingston, Rhode Island, USA</p>
     </div>
 
     <span class="education-year">Jan 2021–Dec 2022</span>
