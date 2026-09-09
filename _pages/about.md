@@ -195,7 +195,7 @@ redirect_from:
 
 .education-degree {
   margin: 0 0 0.2rem;
-  font-size: 0.98rem;
+  font-size: 0.82rem;
   line-height: 1.3;
 }
 
