@@ -159,112 +159,77 @@ redirect_from:
 </style> -->
 
 <style>
+/* Extra-compact Education cards */
 .education-heading {
-  margin-top: 1.25rem;
-  margin-bottom: 0.55rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid rgba(127, 127, 127, 0.15);
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.25rem;
 }
 
-/* Keep the cards vertically stacked */
 .education-grid {
-  display: block;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .education-card {
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 0.75rem;
-  padding: 0.9rem 1.1rem;
-
-  border: 1px solid rgba(127, 127, 127, 0.25);
-  border-left: 4px solid #52adc8;
-  border-radius: 7px;
-
-  background: rgba(127, 127, 127, 0.035);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  height: auto;
+  min-height: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  border-left-width: 3px;
+  border-radius: 6px;
 }
 
 .education-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .education-degree {
-  margin: 0 0 0.2rem;
-  font-size: 0.98rem;
-  line-height: 1.3;
+  margin: 0 0 0.1rem;
+  font-size: 0.88rem;
+  line-height: 1.2;
 }
 
 .education-university {
   margin: 0;
-  font-size: 0.82rem;
-  font-style: italic;
-  line-height: 1.3;
-  color: #767b7e;
-}
-
-.education-year {
-  flex-shrink: 0;
-  padding: 0.2rem 0.5rem;
-
-  border-radius: 1rem;
-  background: #e5f4f8;
-  color: #2387a4;
-
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.74rem;
   line-height: 1.2;
 }
 
-.education-details {
-  display: grid;
-  grid-template-columns: 1fr 1.8fr;
-  gap: 0.75rem;
+.education-year {
+  padding: 0.15rem 0.4rem;
+  font-size: 0.6rem;
+  line-height: 1.1;
+}
 
-  margin-top: 0.7rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid rgba(127, 127, 127, 0.2);
+.education-details {
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
 }
 
 .education-label {
-  display: block;
-  margin-bottom: 0.08rem;
-
-  color: #85898d;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
+  margin-bottom: 0.03rem;
+  font-size: 0.52rem;
+  letter-spacing: 0.04rem;
 }
 
 .education-value {
   margin: 0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1.3;
+  font-size: 0.7rem;
+  line-height: 1.2;
 }
 
-/* Mobile layout */
 @media screen and (max-width: 600px) {
   .education-card {
-    padding: 0.8rem 0.9rem;
-  }
-
-  .education-header {
-    gap: 0.5rem;
+    padding: 0.6rem 0.7rem;
   }
 
   .education-degree {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   .education-details {
-    grid-template-columns: 1fr;
-    gap: 0.4rem;
+    gap: 0.3rem;
   }
 }
 </style>
