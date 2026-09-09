@@ -136,10 +136,9 @@ redirect_from:
 
 .education-value {
   margin: 0;
-  /* font-size: 0.8rem; */
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.3;
-  font-size:0.82rem
 }
 
 /* Mobile layout */
