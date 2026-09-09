@@ -20,7 +20,7 @@ redirect_from:
         Master of Science in Electrical and Computer Engineering
       </h3>
 
-      <p class="education-university education-details">
+      <p class="education-university">
         University of Rhode Island
       </p>
        <div>
