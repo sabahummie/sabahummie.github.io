@@ -25,7 +25,7 @@ redirect_from:
       </p>
     </div>
 
-    <span class="education-year">2021–2022</span>
+    <span class="education-year">Jan 2021–Dec 2022</span>
   </div>
 
   <div class="education-details">
@@ -34,10 +34,10 @@ redirect_from:
       <p class="education-value">Kingston, Rhode Island</p>
     </div>
 
-    <div>
+    <!-- <div>
       <span class="education-label">Study period</span>
       <p class="education-value">January 2021 – December 2022</p>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -53,7 +53,7 @@ redirect_from:
       </p>
     </div>
 
-    <span class="education-year">2007–2012</span>
+    <span class="education-year">Sep 2007– Aug 2012</span>
   </div>
 
   <div class="education-details">
@@ -62,10 +62,10 @@ redirect_from:
       <p class="education-value">Dhaka, Bangladesh</p>
     </div>
 
-    <div>
+    <!-- <div>
       <span class="education-label">Study period</span>
       <p class="education-value">September 2007 – August 2012</p>
-    </div>
+    </div> -->
   </div>
 </div>
 
