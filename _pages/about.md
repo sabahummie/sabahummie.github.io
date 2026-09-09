@@ -25,23 +25,10 @@ redirect_from:
       </p>
       <span class="education-label">Location</span>
       <p class="education-value">Kingston, Rhode Island</p>
-      
     </div>
 
     <span class="education-year">Jan 2021–Dec 2022</span>
   </div>
-
-  <!-- <div class="education-details">
-    <div>
-      <span class="education-label">Location</span>
-      <p class="education-value">Kingston, Rhode Island</p>
-    </div>
-
-    <!-- <div>
-      <span class="education-label">Study period</span>
-      <p class="education-value">January 2021 – December 2022</p>
-    </div> -->
-  <!-- </div> --> 
 </div>
 
 <div class="education-card">
@@ -54,22 +41,13 @@ redirect_from:
       <p class="education-university">
         North South University
       </p>
+      <span class="education-label">Location</span>
+      <p class="education-value">Dhaka, Bangladesh</p>
     </div>
 
     <span class="education-year">Sep 2007– Aug 2012</span>
   </div>
 
-  <div class="education-details">
-    <div>
-      <span class="education-label">Location</span>
-      <p class="education-value">Dhaka, Bangladesh</p>
-    </div>
-
-    <!-- <div>
-      <span class="education-label">Study period</span>
-      <p class="education-value">September 2007 – August 2012</p>
-    </div> -->
-  </div>
 </div>
 
 <!-- <style>
