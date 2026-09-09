@@ -159,81 +159,115 @@ redirect_from:
 </style> -->
 
 <style>
-/* Extra-compact Education cards */
 .education-heading {
-  margin-top: 1rem;
-  margin-bottom: 0.35rem;
-  padding-bottom: 0.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.15);
 }
 
+/* Keep the cards vertically stacked */
 .education-grid {
-  margin-bottom: 0.75rem;
+  display: block;
+  margin-bottom: 1.25rem;
 }
 
 .education-card {
-  height: auto;
-  min-height: 0;
-  margin-bottom: 0.5rem;
-  padding: 0.65rem 0.85rem;
-  border-left-width: 3px;
-  border-radius: 6px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.9rem 1.1rem;
+
+  border: 1px solid rgba(127, 127, 127, 0.25);
+  border-left: 4px solid #52adc8;
+  border-radius: 7px;
+
+  background: rgba(127, 127, 127, 0.035);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .education-header {
-  gap: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .education-degree {
-  margin: 0 0 0.1rem;
-  font-size: 0.88rem;
-  line-height: 1.2;
+  margin: 0 0 0.2rem;
+  font-size: 0.98rem;
+  line-height: 1.3;
 }
 
 .education-university {
   margin: 0;
-  font-size: 0.74rem;
-  line-height: 1.2;
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.3;
+  color: #767b7e;
 }
 
 .education-year {
-  padding: 0.15rem 0.4rem;
-  font-size: 0.6rem;
-  line-height: 1.1;
+  flex-shrink: 0;
+  padding: 0.2rem 0.5rem;
+
+  border-radius: 1rem;
+  background: #e5f4f8;
+  color: #2387a4;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .education-details {
-  gap: 0.5rem;
-  margin-top: 0.4rem;
-  padding-top: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 0.75rem;
+
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
 }
 
 .education-label {
-  margin-bottom: 0.03rem;
-  font-size: 0.52rem;
-  letter-spacing: 0.04rem;
+  display: block;
+  margin-bottom: 0.08rem;
+
+  color: #85898d;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
 }
 
 .education-value {
   margin: 0;
-  font-size: 0.7rem;
-  line-height: 1.2;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
+/* Mobile layout */
 @media screen and (max-width: 600px) {
   .education-card {
-    padding: 0.6rem 0.7rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .education-header {
+    gap: 0.5rem;
   }
 
   .education-degree {
-    font-size: 0.84rem;
+    font-size: 0.9rem;
   }
 
   .education-details {
-    gap: 0.3rem;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
   }
 }
 </style>
-
 ## Research Interest
 <div class="justified-text" markdown="1">
 My research interests lie at the intersection of applied machine learning and the reliability of AI in healthcare and biomedical sciences. I am deeply focused on the explainability of AI and its ability to generate scientifically backed outcomes for early disease prediction. To achieve this, my work frequently involves analyzing data starting from patient demography to high-dimensional genomic expression datasets. I am also passionate to explore the interpretability of advanced LLM agents to ensure clinical tools are both powerful and trustworthy.
