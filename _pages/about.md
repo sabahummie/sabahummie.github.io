@@ -20,15 +20,19 @@ redirect_from:
         Master of Science in Electrical and Computer Engineering
       </h3>
 
-      <p class="education-university">
+      <p class="education-university education-details">
         University of Rhode Island
       </p>
+       <div>
+          <span class="education-label">Location</span>
+          <p class="education-value">Kingston, Rhode Island</p>
+        </div>
     </div>
 
     <span class="education-year">Jan 2021–Dec 2022</span>
   </div>
 
-  <div class="education-details">
+  <!-- <div class="education-details">
     <div>
       <span class="education-label">Location</span>
       <p class="education-value">Kingston, Rhode Island</p>
@@ -38,7 +42,7 @@ redirect_from:
       <span class="education-label">Study period</span>
       <p class="education-value">January 2021 – December 2022</p>
     </div> -->
-  </div>
+  <!-- </div> --> 
 </div>
 
 <div class="education-card">
