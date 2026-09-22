@@ -112,6 +112,37 @@ author_profile: true
 </div>
 
 <style>
+/* Reduce the overall width of the project cards */
+.project-list {
+  width: 100%;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.project-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Keep project images inside the narrower card */
+.project-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Use full available width on smaller screens */
+@media screen and (max-width: 750px) {
+  .project-list,
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 .project-list {
   margin-top: 1.5rem;
 }
